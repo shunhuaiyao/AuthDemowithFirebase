@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseUI
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,41 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func logingTapped(_ sender: UIButton) {
+        
+        // Get the default auth UI object
+        let authUI = FUIAuth.defaultAuthUI()
+        
+        guard authUI != nil else {
+            // Log the error
+            return
+        }
+        
+        // Set ourselves as the delegate
+        authUI?.delegate = self
+        authUI?.providers = [FUIEmailAuth()]
+        
+        // Get a referencre to the auth UI view controller
+        let authViewController = authUI!.authViewController()
+        
+        // Show it
+        present(authViewController, animated: true, completion: nil)
+    }
+    
+}
 
+extension ViewController: FUIAuthDelegate {
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
+        
+        // Check if there was an error
+        guard error == nil else {
+            // Log the error
+            return
+        }
+        
+        // authDataResult?.user.uid
+        
+        performSegue(withIdentifier: "gohome", sender: self)
+    }
 }
 
