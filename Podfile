@@ -11,5 +11,6 @@ target 'authdemo' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'FirebaseUI'
+  pod 'GoogleSignIn'
 
 end

@@ -177,6 +177,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI
+  - GoogleSignIn
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -231,6 +232,6 @@ SPEC CHECKSUMS:
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
 
-PODFILE CHECKSUM: 746640c863fa51b927d11b3bc09bbf8abd5a7b8a
+PODFILE CHECKSUM: 9a8a7e7a1ca8f0e7b02a5a12145b66a9b42de279
 
 COCOAPODS: 1.7.1

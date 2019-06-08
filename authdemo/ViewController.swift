@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseUI
+import GoogleSignIn
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        GIDSignIn.sharedInstance().uiDelegate = self
+//        GIDSignIn.sharedInstance().signIn()
     }
 
     @IBAction func logingTapped(_ sender: UIButton) {
@@ -28,7 +32,7 @@ class ViewController: UIViewController {
         
         // Set ourselves as the delegate
         authUI?.delegate = self
-        authUI?.providers = [FUIEmailAuth()]
+        authUI?.providers = [FUIGoogleAuth(), FUIEmailAuth()]
         
         // Get a referencre to the auth UI view controller
         let authViewController = authUI!.authViewController()

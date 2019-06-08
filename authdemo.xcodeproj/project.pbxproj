@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		20BE857022AB547D00988390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BE856F22AB547D00988390 /* Assets.xcassets */; };
 		20BE857322AB547D00988390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BE857122AB547D00988390 /* LaunchScreen.storyboard */; };
 		20BE857B22AB550800988390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BE857A22AB550800988390 /* GoogleService-Info.plist */; };
+		20BE857D22ABD0F400988390 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20BE857C22ABD0F400988390 /* credentials.plist */; };
 		D31E7677CB86F6B2AB97F0B9 /* Pods_authdemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05EB53A07DFBF190432F0D5B /* Pods_authdemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		20BE857222AB547D00988390 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20BE857422AB547D00988390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20BE857A22AB550800988390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		20BE857C22ABD0F400988390 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		7D9CA8376E61A1BC8090895C /* Pods-authdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authdemo.debug.xcconfig"; path = "Target Support Files/Pods-authdemo/Pods-authdemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8A300F4F64619BAEA2CDF829 /* Pods-authdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-authdemo.release.xcconfig"; path = "Target Support Files/Pods-authdemo/Pods-authdemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				7D9CA8376E61A1BC8090895C /* Pods-authdemo.debug.xcconfig */,
 				8A300F4F64619BAEA2CDF829 /* Pods-authdemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -79,6 +80,7 @@
 				20BE856F22AB547D00988390 /* Assets.xcassets */,
 				20BE857122AB547D00988390 /* LaunchScreen.storyboard */,
 				20BE857A22AB550800988390 /* GoogleService-Info.plist */,
+				20BE857C22ABD0F400988390 /* credentials.plist */,
 				20BE857422AB547D00988390 /* Info.plist */,
 			);
 			path = authdemo;
@@ -155,6 +157,7 @@
 			files = (
 				20BE857322AB547D00988390 /* LaunchScreen.storyboard in Resources */,
 				20BE857B22AB550800988390 /* GoogleService-Info.plist in Resources */,
+				20BE857D22ABD0F400988390 /* credentials.plist in Resources */,
 				20BE857022AB547D00988390 /* Assets.xcassets in Resources */,
 				20BE856E22AB547C00988390 /* Main.storyboard in Resources */,
 			);
